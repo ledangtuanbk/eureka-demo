@@ -3,7 +3,7 @@ package com.ldt.musiccategoryservice.models;
 /**
  * @author tledang
  */
-public class Music {
+public class MusicInfo {
     private int id;
     private String name;
 

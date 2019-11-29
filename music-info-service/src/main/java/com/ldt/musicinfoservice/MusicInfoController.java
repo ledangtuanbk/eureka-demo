@@ -5,16 +5,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * @author tledang
  */
 @RestController
-@RequestMapping("/music-info")
+@RequestMapping("/info")
 public class MusicInfoController {
 
-    @RequestMapping("/detail/{id}")
-    public Music getDetail(@PathVariable("id") int id) {
-        System.out.println("getDetail " + id);
+    @RequestMapping("/get/{id}")
+    public Music getDetail(@PathVariable("id") int id) throws InterruptedException {
         return new Music(id, "music name");
     }
 }

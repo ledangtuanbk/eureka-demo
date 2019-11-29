@@ -4,27 +4,22 @@ package com.ldt.musiccategoryservice.models;
  * @author tledang
  */
 public class Category {
-    private String name;
-    private int type;
+    private MusicInfo musicInfo;
+    private MusicRating musicRating;
 
-    public Category(String name, int type) {
-        this.name = name;
-        this.type = type;
+    public MusicInfo getMusicInfo() {
+        return musicInfo;
     }
 
-    public String getName() {
-        return name;
+    public void setMusicInfo(MusicInfo musicInfo) {
+        this.musicInfo = musicInfo;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public MusicRating getMusicRating() {
+        return musicRating;
     }
 
-    public int getType() {
-        return type;
-    }
-
-    public void setType(int type) {
-        this.type = type;
+    public void setMusicRating(MusicRating musicRating) {
+        this.musicRating = musicRating;
     }
 }
